@@ -41,31 +41,5 @@
 
     <h2>Video Thumbnails</h2>
     
-    <div class="video-container" id="videoContainer"></div>
-
-    <script>
-        // Define video titles and URLs (replace with your own data)
-        const videoData = [
-            { title: 'First win in Tier 2', url: 'https://www.youtube.com/watch?v=TSymCt8Qq1Y' },
-            { title: 'Start of the McLaren fightback!', url: 'https://www.youtube.com/watch?v=d02Z_dP2BJw' },
-            { title: 'Slow Panorama', url: 'https://www.youtube.com/watch?v=Nc6zrd1Ifoc' }
-            // Add more video data as needed
-        ];
-
-        const container = document.getElementById('videoContainer');
-
-        videoData.forEach(video => {
-            const videoDiv = document.createElement('div');
-            videoDiv.classList.add('video');
-
-            const videoLink = document.createElement('a');
-            videoLink.href = video.url;
-            videoLink.target = '_blank';
-            videoLink.textContent = video.title;
-
-            videoDiv.appendChild(videoLink);
-            container.appendChild(videoDiv);
-        });
-    </script>
 </body>
 </html>
